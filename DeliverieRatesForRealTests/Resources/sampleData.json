@@ -1,0 +1,33 @@
+
+[
+    {
+        "itemType": "document",
+        "deliveryType": "sameDay",
+        "price": 4.00
+    },
+    {
+        "itemType": "document",
+        "deliveryType": "threeDays",
+        "price": 1.00
+    },
+    {
+        "itemType": "smallParcel",
+        "deliveryType": "sameDay",
+        "price": 7.00
+    },
+    {
+        "itemType": "smallParcel",
+        "deliveryType": "threeDays",
+        "price": 2.50
+    },
+    {
+        "itemType": "largeparcel",
+        "deliveryType": "sameday",
+        "price": 9.00
+    },
+    {
+        "itemType": "largeParcel",
+        "deliveryType": "threeDays",
+        "price": 3.00
+    }
+]
