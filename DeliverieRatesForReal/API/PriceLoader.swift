@@ -8,6 +8,7 @@
 import Foundation
 
 protocol PriceLoaderType {
+    static var shared: PriceLoaderType { get }
     func price(for itemType: ItemType, in deliveryType: DeliveryType) -> Double?
 }
 
@@ -30,11 +31,13 @@ struct ItemPrice: Codable {
     }
 }
 
-class JSONPriceLoader: PriceLoaderType {
+class PriceLoader: PriceLoaderType {
+    static let shared: PriceLoaderType = PriceLoader()
+    
     let filePath: String
     private var itemPrices: [ItemPrice] = []
     
-    init(filePath: String) {
+    init(filePath: String = "sampleData.json") {
         self.filePath = filePath
         itemPrices = DataUtils.loadJson(filePath)
     }
