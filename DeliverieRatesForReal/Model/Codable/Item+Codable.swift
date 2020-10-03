@@ -1,5 +1,5 @@
 //
-//  DeliveryItem.swift
+//  Item+Codable.swift
 //  DeliverieRatesForReal
 //
 //  Created by Otávio Zabaleta on 03/10/2020.
@@ -7,11 +7,7 @@
 
 import Foundation
 
-enum ItemType: String, Codable {
-    case document
-    case smallParcel
-    case largeParcel
-    case invalid
+extension ItemType: Codable {
     
     init(rawValue: String) {
         switch rawValue.lowercased().trimmingCharacters(in: CharacterSet(charactersIn: " ")) {
@@ -27,11 +23,7 @@ enum ItemType: String, Codable {
     }
 }
 
-enum DeliveryType: String, Codable {
-    case sameDay
-    case threeDays
-    case invalid
-    
+extension DeliveryType: Codable {    
     init(rawValue: String) {
         switch rawValue.lowercased().trimmingCharacters(in: CharacterSet(charactersIn: " ")) {
         case DeliveryType.sameDay.rawValue.lowercased():

@@ -11,7 +11,7 @@ import XCTest
 class PriceLoaderTests: XCTestCase {
 
     func testJSONPriceLoader() throws {
-        let loader = JSONPriceLoader(filePath: "sampleData.json")
+        let loader = PriceLoader.shared
         XCTAssert(loader.price(for: .document, in: .sameDay) == 4)
         XCTAssert(loader.price(for: .document, in: .threeDays) == 1)
         XCTAssert(loader.price(for: .smallParcel, in: .sameDay) == 7)
