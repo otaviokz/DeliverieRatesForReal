@@ -29,12 +29,3 @@ struct ThreeSameDayItemsDiscount: OrderPriceRuleType {
         total * (1 - 0.05)
     }
 }
-
-struct PriceRules {
-    static var orderRules: [OrderPriceRuleType] {
-        [
-            // An order with 3 Same Day items gets a 5% discount
-            ThreeSameDayItemsDiscount()
-        ]
-    }
-}

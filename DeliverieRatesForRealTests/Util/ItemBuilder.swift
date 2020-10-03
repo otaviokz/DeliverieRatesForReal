@@ -12,6 +12,7 @@ class ItemBuilder {
     private var itemType: ItemType = .document
     private var deliveryType: DeliveryType = .sameDay
     private var priceLoader: PriceLoaderType = PriceLoader.shared
+    private var toAddress: Address = AddressBuilder.addressOne
     
     @inlinable var same: ItemBuilder {
         deliveryType = .sameDay
@@ -38,7 +39,17 @@ class ItemBuilder {
         return self
     }
     
+    @inlinable var highLands: ItemBuilder {
+        toAddress = AddressBuilder.highlands
+        return self
+    }
+    
+    @inlinable var addressOne: ItemBuilder {
+        toAddress = AddressBuilder.addressOne
+        return self
+    }
+    
     var item: Item {
-        Item(itemType: itemType, deliveryType: deliveryType, priceLoader: priceLoader)
+        Item(itemType: itemType, deliveryType: deliveryType, toAddress: toAddress, priceLoader: priceLoader)
     }
 }

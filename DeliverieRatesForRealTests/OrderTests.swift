@@ -17,6 +17,7 @@ class OrderTests: XCTestCase {
     let tSmall = Builder().small.three.item
     let sLarge = Builder().large.same.item
     let tLarge = Builder().large.three.item
+    let sDocHighlands = Builder().doc.same.highLands.item
     
     func testOrderShouldHaveUpTo_3_Items() throws {
         XCTAssertNoThrow(try Order())
