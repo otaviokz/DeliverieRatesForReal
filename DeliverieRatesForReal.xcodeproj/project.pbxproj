@@ -13,7 +13,7 @@
 		3062B0872528F60F0026F1AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3062B0862528F60F0026F1AF /* Preview Assets.xcassets */; };
 		3062B0C52528F79C0026F1AF /* PriceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B0C42528F79C0026F1AF /* PriceLoader.swift */; };
 		3062B0C92528F7EB0026F1AF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B0C82528F7EB0026F1AF /* Item.swift */; };
-		3062B0CF2528F99E0026F1AF /* DeliveryItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B0CE2528F99E0026F1AF /* DeliveryItemTests.swift */; };
+		3062B0CF2528F99E0026F1AF /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B0CE2528F99E0026F1AF /* ItemTests.swift */; };
 		3062B0D92528FC760026F1AF /* JSONDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B0D82528FC760026F1AF /* JSONDataLoader.swift */; };
 		3062B0DF2528FDDD0026F1AF /* sampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3062B0DE2528FDDD0026F1AF /* sampleData.json */; };
 		3062B0E32528FEC00026F1AF /* PriceLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B0E22528FEC00026F1AF /* PriceLoaderTests.swift */; };
@@ -24,6 +24,10 @@
 		3062B108252916300026F1AF /* OrderPriceRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B107252916300026F1AF /* OrderPriceRuleType.swift */; };
 		3062B10F25291D880026F1AF /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B10E25291D880026F1AF /* ItemBuilder.swift */; };
 		3062B1162529278C0026F1AF /* ItemPriceRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B1152529278C0026F1AF /* ItemPriceRuleType.swift */; };
+		3062B12425292D6A0026F1AF /* Accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B12325292D6A0026F1AF /* Accessors.swift */; };
+		3062B12A25292DD70026F1AF /* ItemValidationRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B12925292DD70026F1AF /* ItemValidationRuleType.swift */; };
+		3062B13225292FC00026F1AF /* AddressBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B13125292FC00026F1AF /* AddressBuilder.swift */; };
+		3062B136252936AE0026F1AF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3062B135252936AE0026F1AF /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +49,9 @@
 		3062B0882528F60F0026F1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3062B08D2528F60F0026F1AF /* DeliverieRatesForRealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliverieRatesForRealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3062B0932528F60F0026F1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3062B0BF2528F74F0026F1AF /* DeliverieRatesForRealTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeliverieRatesForRealTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		3062B0C42528F79C0026F1AF /* PriceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLoader.swift; sourceTree = "<group>"; };
 		3062B0C82528F7EB0026F1AF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		3062B0CE2528F99E0026F1AF /* DeliveryItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryItemTests.swift; sourceTree = "<group>"; };
+		3062B0CE2528F99E0026F1AF /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		3062B0D82528FC760026F1AF /* JSONDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataLoader.swift; sourceTree = "<group>"; };
 		3062B0DE2528FDDD0026F1AF /* sampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
 		3062B0E22528FEC00026F1AF /* PriceLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLoaderTests.swift; sourceTree = "<group>"; };
@@ -59,6 +62,10 @@
 		3062B107252916300026F1AF /* OrderPriceRuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPriceRuleType.swift; sourceTree = "<group>"; };
 		3062B10E25291D880026F1AF /* ItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
 		3062B1152529278C0026F1AF /* ItemPriceRuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceRuleType.swift; sourceTree = "<group>"; };
+		3062B12325292D6A0026F1AF /* Accessors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessors.swift; sourceTree = "<group>"; };
+		3062B12925292DD70026F1AF /* ItemValidationRuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemValidationRuleType.swift; sourceTree = "<group>"; };
+		3062B13125292FC00026F1AF /* AddressBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBuilder.swift; sourceTree = "<group>"; };
+		3062B135252936AE0026F1AF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				3062B10D25291D7B0026F1AF /* Util */,
-				3062B0BF2528F74F0026F1AF /* DeliverieRatesForRealTests-Bridging-Header.h */,
-				3062B0CE2528F99E0026F1AF /* DeliveryItemTests.swift */,
+				3062B0CE2528F99E0026F1AF /* ItemTests.swift */,
 				3062B0B62528F6A40026F1AF /* NotRelatedToExercise */,
 				3062B0E22528FEC00026F1AF /* PriceLoaderTests.swift */,
 				3062B0EB2529012E0026F1AF /* Resources */,
@@ -182,6 +188,7 @@
 				3062B0F625290B670026F1AF /* Codable */,
 				3062B0C82528F7EB0026F1AF /* Item.swift */,
 				3062B0FD25290C3B0026F1AF /* Order.swift */,
+				3062B135252936AE0026F1AF /* Address.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				3062B10E25291D880026F1AF /* ItemBuilder.swift */,
+				3062B13125292FC00026F1AF /* AddressBuilder.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -207,6 +215,8 @@
 			children = (
 				3062B107252916300026F1AF /* OrderPriceRuleType.swift */,
 				3062B1152529278C0026F1AF /* ItemPriceRuleType.swift */,
+				3062B12325292D6A0026F1AF /* Accessors.swift */,
+				3062B12925292DD70026F1AF /* ItemValidationRuleType.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -318,7 +328,10 @@
 				3062B0C52528F79C0026F1AF /* PriceLoader.swift in Sources */,
 				3062B0802528F60E0026F1AF /* DeliverieRatesForRealApp.swift in Sources */,
 				3062B0D92528FC760026F1AF /* JSONDataLoader.swift in Sources */,
+				3062B12425292D6A0026F1AF /* Accessors.swift in Sources */,
+				3062B136252936AE0026F1AF /* Address.swift in Sources */,
 				3062B0F825290B7B0026F1AF /* Item+Codable.swift in Sources */,
+				3062B12A25292DD70026F1AF /* ItemValidationRuleType.swift in Sources */,
 				3062B108252916300026F1AF /* OrderPriceRuleType.swift in Sources */,
 				3062B0FE25290C3B0026F1AF /* Order.swift in Sources */,
 				3062B1162529278C0026F1AF /* ItemPriceRuleType.swift in Sources */,
@@ -330,9 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3062B10225290E660026F1AF /* OrderTests.swift in Sources */,
-				3062B0CF2528F99E0026F1AF /* DeliveryItemTests.swift in Sources */,
+				3062B0CF2528F99E0026F1AF /* ItemTests.swift in Sources */,
 				3062B10F25291D880026F1AF /* ItemBuilder.swift in Sources */,
 				3062B0E32528FEC00026F1AF /* PriceLoaderTests.swift in Sources */,
+				3062B13225292FC00026F1AF /* AddressBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +535,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = otaviokz.DeliverieRatesForRealTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DeliverieRatesForRealTests/DeliverieRatesForRealTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,7 +558,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = otaviokz.DeliverieRatesForRealTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DeliverieRatesForRealTests/DeliverieRatesForRealTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliverieRatesForReal.app/DeliverieRatesForReal";

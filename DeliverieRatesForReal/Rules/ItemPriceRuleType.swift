@@ -31,14 +31,3 @@ struct PremiumClientDiscount: ItemPriceRuleType {
         return result
     }
 }
-
-extension PriceRules {
-    static var itemRules: [ItemPriceRuleType] {
-        [
-            // Premium clients get a 7.5% discount, except on Large Parcels
-            PremiumClientDiscount()
-        ]
-        
-    }
-}
-
